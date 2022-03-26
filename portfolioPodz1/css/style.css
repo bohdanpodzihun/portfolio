@@ -1,17 +1,18 @@
 html {
+    box-sizing: border-box;
     scroll-behavior: smooth;
+    font-family: 'Manrope', sans-serif;
 }
+
+*, *::before, ::after {
+    box-sizing: inherit;
+}
+
 
 body {
     margin: 0;
     padding: 0;
     background-color: var(--blackColor);
-}
-
-.container {
-    width: 1440px;
-    margin: 0 auto;
-    font-family: 'Manrope', sans-serif;
 }
 
 :root {
@@ -88,11 +89,11 @@ body {
 
 @media screen and (max-width: 1280px) {
     .headerFlex {
-        justify-content: flex-start;
+        justify-content: space-between;
     }
 
-    .headerFlexItem:first-child {
-        margin-right: 200px;
+    .headerFlexItem:last-child {
+        margin-right: 30px;
     }
 
     .flexRightItem {
@@ -112,12 +113,13 @@ body {
 
 @media screen and (max-width: 768px) {
     .headerFlexItem:first-child {
-        margin-right: 100px;
+        margin-right: 40px;
     }
 }
 
 .homeFlex {
     display: flex;
+    justify-content: center;
 }
 .homeFlexItem {
     margin-top: 98px;
@@ -127,6 +129,10 @@ body {
 .homeFlexItem:last-child {
     margin-top: 160px;
     margin-left: 140px;
+}
+
+.homeFlexItem:first-child{
+    margin-bottom: 200px;
 }
 
 .homeFlexItemH2 {
@@ -196,24 +202,27 @@ body {
 @media screen and (max-width: 1280px) {
     .homeFlex {
         flex-direction: column-reverse;
-    }
-
-    .homeFlexItem {
-        margin-left: 250px;
+        align-items: center;
     }
 
     .homeFlexItem:last-child {
-        margin-left: 300px;
+        margin: 0;
+        margin-top: 50px;
+    }
+
+    .homeFlexItem:first-child {
+        margin-left: 100px;
+
     }
 }
 
 @media screen and (max-width: 768px) {
     .homeFlexItem {
-        margin-left: 70px;
+        margin-left: 30px;
     }
 
     .homeFlexItem:last-child {
-        margin-left: 70px;
+        margin-left: 30px;
     }
 
     .homeFlexItemH2 {
@@ -256,8 +265,8 @@ body {
 .textOnPhoto {
     color: var(--whiteColor);
     position: absolute;
-    top: 500px;
-    left: 270px;
+    top: 490px;
+    left: 385px;
     font-style: normal;
     font-weight: 700;
     font-size: 40px;
@@ -273,6 +282,7 @@ body {
 @media screen and (max-width: 1280px) {
     .divinVersionFlex {
         flex-direction: column;
+        align-items: center;
     }
 
     .inVersionFlexItem {
@@ -281,7 +291,6 @@ body {
     }
 
     .inVersionImg {
-        margin-left: 250px;
         width: 500px;
     }
 
@@ -291,19 +300,22 @@ body {
 
     .textOnPhoto {
         top: 410px;
-        left: 420px;
+        left: 475px;
     }
 }
 
 @media screen and (max-width: 768px) {
+    .divinVersionFlex {
+        align-items: center;
+    }
+
     .inVersionImg {
-        margin-left: 75px;
         width: 400px;
     }
 
     .textOnPhoto {
         top: 330px;
-        left: 210px;
+        left: 280px;
     }
 }
 
@@ -324,6 +336,7 @@ body {
 .visualExplorationsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .visualExplorationsGridItem {
@@ -338,24 +351,9 @@ body {
         
     }
 
-    .visualExplorationsGridItem {
-        margin-left: 300px;
-    }
-
     .visualExplorationsH3 {
         text-align: left;
-        margin-left: 340px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .visualExplorationsGridItem {
-        margin-left: 75px;
-    }
-
-    .visualExplorationsH3 {
-        text-align: left;
-        margin-left: 110px;
+        text-align: center;
     }
 }
 
@@ -375,10 +373,10 @@ body {
 .personalProjectsGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
+    justify-items: center;
 }
 
 .personalProjectsItem {
-    justify-items: center;
     border-radius: 4px;
 }
 
@@ -389,35 +387,15 @@ body {
     }
 
     .personalProjectsItem {
-        margin-left: 300px;
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
 
     .personalProjectsItem:last-child {
-        margin-left: 296px;
         margin-bottom: 0;
     }
 
     .personalProjectsH3 {
-        text-align: left;
-        margin-left: 340px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .personalProjectsH3 {
-        text-align: left;
-        margin-left: 110px;
-    }
-
-    .personalProjectsItem {
-        margin-left: 75px;
-        margin-bottom: 20px;
-    }
-
-    .personalProjectsItem:last-child {
-        margin-left: 71px;
-        margin-bottom: 0;
+        text-align: center;
     }
 }
 
@@ -477,35 +455,15 @@ body {
 
 @media screen and (max-width: 1280px) {
     .contactMeH3 {
-        text-align: left;
-        margin-left: 400px;
+        text-align: center;
     }
 
     .contactMeP {
-        text-align: left;
-        margin-left: 280px;
+        text-align: center;
     }
 
     .contactMeButton {
-        text-align: left;
-        margin-left: 280px;
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .contactMeH3 {
-        text-align: left;
-        margin-left: 170px;
-    }
-
-    .contactMeP {
-        text-align: left;
-        margin-left: 45px;
-    }
-
-    .contactMeButton {
-        text-align: left;
-        margin-left: 60px;
+        text-align: center;
     }
 }
 
@@ -524,6 +482,7 @@ body {
 
 .footerFlexItem:first-child {
     margin-bottom: 30px;
+    margin-left: 30px;
 }
 
 .footerP {
@@ -550,29 +509,25 @@ body {
 
 @media screen and (max-width: 1280px) {
     .footerFlex {
-        justify-content: start;
+        justify-content: space-between;
     }
 
     .footerFlexItem:first-child {
         margin-left: 30px;
-        margin-right: 200px;
     }
 }
 
 @media screen and (max-width: 768px) {
     .footerFlex {
         flex-direction: column-reverse;
+        align-items: center;
     }
 
     .footerRightGrid {
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(5, 1fr);
     }
 
-    .footerRightGridItem {
-        margin-left: 250px;
-    }
-
-    .footerP {
-        margin-left: 75px;
+    .footerFlexItem:first-child {
+        margin-left: -30px;
     }
 }
