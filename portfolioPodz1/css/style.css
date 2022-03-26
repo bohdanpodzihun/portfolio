@@ -110,6 +110,12 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .headerFlexItem:first-child {
+        margin-right: 100px;
+    }
+}
+
 .homeFlex {
     display: flex;
 }
@@ -201,6 +207,35 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .homeFlexItem {
+        margin-left: 70px;
+    }
+
+    .homeFlexItem:last-child {
+        margin-left: 70px;
+    }
+
+    .homeFlexItemH2 {
+        width: 400px;
+        text-align: center;
+    }
+
+    .homeFlexItemH3 {
+        margin-left: 20px;
+        width: 350px;
+        text-align: center;
+    }
+
+    .homeFlexDownButton {
+        margin-top: 50px;
+    }
+
+    .homeFlexEmailButton {
+        margin-left: -20px;
+    }
+}
+
 .inVersion .container {
     position: relative;
     text-align: center;
@@ -260,6 +295,18 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .inVersionImg {
+        margin-left: 75px;
+        width: 400px;
+    }
+
+    .textOnPhoto {
+        top: 330px;
+        left: 210px;
+    }
+}
+
 .visualExplorationsH3 {
     text-transform: capitalize;
     color: var(--whiteColor);
@@ -298,6 +345,17 @@ body {
     .visualExplorationsH3 {
         text-align: left;
         margin-left: 340px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .visualExplorationsGridItem {
+        margin-left: 75px;
+    }
+
+    .visualExplorationsH3 {
+        text-align: left;
+        margin-left: 110px;
     }
 }
 
@@ -343,6 +401,23 @@ body {
     .personalProjectsH3 {
         text-align: left;
         margin-left: 340px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .personalProjectsH3 {
+        text-align: left;
+        margin-left: 110px;
+    }
+
+    .personalProjectsItem {
+        margin-left: 75px;
+        margin-bottom: 20px;
+    }
+
+    .personalProjectsItem:last-child {
+        margin-left: 71px;
+        margin-bottom: 0;
     }
 }
 
@@ -417,6 +492,23 @@ body {
     }
 }
 
+@media screen and (max-width: 768px) {
+    .contactMeH3 {
+        text-align: left;
+        margin-left: 170px;
+    }
+
+    .contactMeP {
+        text-align: left;
+        margin-left: 45px;
+    }
+
+    .contactMeButton {
+        text-align: left;
+        margin-left: 60px;
+    }
+}
+
 .footer {
     border-top: 3px solid #696969;
 }
@@ -464,5 +556,23 @@ body {
     .footerFlexItem:first-child {
         margin-left: 30px;
         margin-right: 200px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .footerFlex {
+        flex-direction: column-reverse;
+    }
+
+    .footerRightGrid {
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .footerRightGridItem {
+        margin-left: 250px;
+    }
+
+    .footerP {
+        margin-left: 75px;
     }
 }
