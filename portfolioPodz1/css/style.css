@@ -86,6 +86,30 @@ body {
     color: var(--whiteColor);
 }
 
+@media screen and (max-width: 1280px) {
+    .headerFlex {
+        justify-content: flex-start;
+    }
+
+    .headerFlexItem:first-child {
+        margin-right: 200px;
+    }
+
+    .flexRightItem {
+        margin-right: 20px;
+    }
+
+    .flexRightItem:first-child {
+        margin-right: 20px;
+        padding: 0;
+    }
+
+    .flexRightItem:last-child  {
+        margin-right: 0;
+        padding: 0;
+    }
+}
+
 .homeFlex {
     display: flex;
 }
@@ -163,6 +187,20 @@ body {
     text-transform: uppercase;
 }
 
+@media screen and (max-width: 1280px) {
+    .homeFlex {
+        flex-direction: column-reverse;
+    }
+
+    .homeFlexItem {
+        margin-left: 250px;
+    }
+
+    .homeFlexItem:last-child {
+        margin-left: 300px;
+    }
+}
+
 .inVersion .container {
     position: relative;
     text-align: center;
@@ -197,6 +235,31 @@ body {
     margin-bottom: 24px;
 }
 
+@media screen and (max-width: 1280px) {
+    .divinVersionFlex {
+        flex-direction: column;
+    }
+
+    .inVersionFlexItem {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .inVersionImg {
+        margin-left: 250px;
+        width: 500px;
+    }
+
+    .inVersionFlexItem:last-child {
+        margin-top: 0;
+    }
+
+    .textOnPhoto {
+        top: 410px;
+        left: 420px;
+    }
+}
+
 .visualExplorationsH3 {
     text-transform: capitalize;
     color: var(--whiteColor);
@@ -222,6 +285,22 @@ body {
     border-radius: 4px;
 }
 
+@media screen and (max-width: 1280px) {
+    .visualExplorationsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .visualExplorationsGridItem {
+        margin-left: 300px;
+    }
+
+    .visualExplorationsH3 {
+        text-align: left;
+        margin-left: 340px;
+    }
+}
+
 .personalProjectsH3 {
     margin-top: 216px;
     margin-bottom: 66px;
@@ -243,6 +322,28 @@ body {
 .personalProjectsItem {
     justify-items: center;
     border-radius: 4px;
+}
+
+@media screen and (max-width: 1280px) {
+    .personalProjectsGrid {
+        grid-template-columns: repeat(1, 1fr);
+        
+    }
+
+    .personalProjectsItem {
+        margin-left: 300px;
+        margin-bottom: 20px;
+    }
+
+    .personalProjectsItem:last-child {
+        margin-left: 296px;
+        margin-bottom: 0;
+    }
+
+    .personalProjectsH3 {
+        text-align: left;
+        margin-left: 340px;
+    }
 }
 
 .contactMe {
@@ -299,6 +400,23 @@ body {
     line-height: 25px;
 }
 
+@media screen and (max-width: 1280px) {
+    .contactMeH3 {
+        text-align: left;
+        margin-left: 400px;
+    }
+
+    .contactMeP {
+        text-align: left;
+        margin-left: 280px;
+    }
+
+    .contactMeButton {
+        text-align: left;
+        margin-left: 280px;
+    }
+}
+
 .footer {
     border-top: 3px solid #696969;
 }
@@ -336,4 +454,15 @@ body {
 
 .footerRightGridItem:last-child {
     margin-right: 0;
+}
+
+@media screen and (max-width: 1280px) {
+    .footerFlex {
+        justify-content: start;
+    }
+
+    .footerFlexItem:first-child {
+        margin-left: 30px;
+        margin-right: 200px;
+    }
 }
